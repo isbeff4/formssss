@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sócio Cabra da Peste</title>
+    <link rel="icon" href="bode.png">
+</head>
+
+<body>
+    <div> 
+        <hr>
+        <header>
+            <h2>Formulário de Inscrições</h2>
+        </header>
+        <main>
+            <form method="post" action="#" >
+                <fieldset>
+                    <legend>Dados pessoais</legend>
+                    <form action="#">
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" placeholder="Escreva seu nome" required/>
+                        <label for="dt_nasc">Data de Nascimento:</label>
+                        <input type="date" name="dt_nasc" required/>
+                        <label for="tel">Telefone:</label>
+                        <input type="tel" name="telefone" placeholder="(XX) XXXXX-XXXX" required/>
+                        <label for="number">CPF:</label>
+                        <input type="number" name="CPF" placeholder="XXX.XXX.XXX-XX" required/>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" placeholder="a@a.com" required/>
+                    </form>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Endereço</legend>
+                    <form action="#">
+                        <label for="endereço">Endereço:</label>
+                        <input type="text" name="endereço" placeholder="Digite seu endereço" required/>
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" name="cidade" placeholder="Digite sua cidade" required/>
+                        <label for="Estado">Estado:</label>
+                        <select name="Estado">
+                            <optgroup label="Sudeste">
+                                <option value="saopaulo">São Paulo</option>
+                                <option value="riodejaneiro">Rio de Janeiro</option>
+                                <option value="minasgerais">Minas Gerais</option>
+                                <option value="espiritosanto">Espirito Santo</option>
+                            </optgroup>
+                            <optgroup label="Sul">
+                                <option value="parana">Paraná</option>
+                                <option value="santacatarina">Snata Catarina</option>
+                                <option value="riogsul">Rio Grande do Sul</option>
+                            </optgroup>
+                            <optgroup label="Centro-Oeste">
+                                <option value="goias">Goiás</option>
+                                <option value="matogrosso">Mato Grosso</option>
+                                <option value="matogrossodosul">Mato Grosso do Sul</option>
+                                <option value="distritofederal ">Distrito Federal</option>
+                            </optgroup>
+                            <optgroup label="Norte">
+                                <option value="amazonas">Amazonas</option>
+                                <option value="para">Pará</option>
+                                <option value="acre">Acre</option>
+                                <option value="roraima">Roraima</option>
+                                <option value="rondonia">Rondônia</option>
+                                <option value="amapa">Amapá</option>
+                                <option value="Tocantins">Tocantins</option>
+                            </optgroup>
+                            <optgroup label="Nordeste">
+                                <option value="alagoas">Alagoas</option>
+                                <option value="bahia">Bahia</option>
+                                <option value="ceara">Ceará</option>
+                                <option value="maranhao">Maranhão</option>
+                                <option value="paraiba">Paraíba</option>
+                                <option value="pernambuco">Pernambuco</option>
+                                <option value="piaui">Piauí</option>
+                                <option value="riograndedonorte">Rio Grande do Norte</option>
+                                <option value="sergipe">Sergipe</option>
+                            </optgroup>
+                        </select>
+                    </form>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Plano</legend>
+                    <form action="#">
+                        <input type="radio" name="resposta" id="animal-Plano Ovelha" value="Plano Ovelha"/>
+                        <label for="animal-Plano Ovelha">Plano Ovelha</label>
+                        <input type="radio" name="resposta" id="animal-Plano Cabrito" value="Plano Cabrito"/>
+                        <label for="animal-Plano Cabrito">Plano Cabrito</label>
+                        <input type="radio" name="resposta" id="animal-Plano Bode" value="Plano Bode"/>
+                        <label for="animal-Plano Bode">Plano Bode</label>
+                        <input type="radio" name="resposta" id="animal-Plano Cabra da Peste" value="Plano Cabra da Peste" checked required/>
+                        <label for="animal-Plano Cabra da Peste">Cabra da Peste</label>
+                    </form>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Fale sobre sua PAIXÃO pelo CABRITUS</legend>
+                    <form action="#">
+                        <textarea name="sugestao" style="resize: none" required="yes" rows="7" cols="125"></textarea>
+                    </form>
+                </fieldset>  
+                
+                <fieldset>
+                    <legend>Termos de Contrato</legend>
+                    <form action="#">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae lectus vel orci interdum sodales. Curabitur venenatis, purus nec fermentum aliquet, mi elit lacinia nulla, nec egestas sem libero eu lorem. Morbi a ante sed nulla gravida condimentum. Integer ut nunc sed felis ultricies laoreet. Duis ultricies vestibulum magna, ut venenatis orci efficitur id. Sed aliquet, risus at dapibus tincidunt, risus erat sollicitudin odio, non posuere libero quam non ligula.
+                        </p>
+                        <input type="checkbox" id="checkbox-aceito termos" name="Aceito termos de contrato[]" value="aceitotermosdecontrato"/>
+                        <label for="checkbox-ceito termos">Aceito termos de contrato</label>
+                        <input type="checkbox" id="checkbox-aceito noticias" name="Aceito receber notícias[]" value="aceitorecebernoticias"/>
+                        <label for="checkbox-aceito noticias">Aceito receber notícias</label>
+                    </form>
+                </fieldset>  
+
+                <br>
+                <button type="submit">Enviar dados</button>
+                <br>
+                <br>
+                <a href="@" >Voltar</a>
+            </form>
+        </main>
+        <hr>
+        <br>
+        <footer>
+            <center>Copyright 2023 - Tec. Multimidia
+            <br>
+            Santa Cruz do Rio Pardo - SP </center>
+        </footer>
+       </div>      
+</body>
+</html>
